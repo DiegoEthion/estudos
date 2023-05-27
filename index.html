@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros compostos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <div id="calculator">
+            <h2>
+                Calculadora de Juros Compostos
+            </h2>
+            <div id="imputbox">
+                <div class="imput-field">
+                    <label for="value">Valor inicial</label>
+                    <input type="number" id="value">
+                </div>
+                <div class="imput-field">
+                    <label for="aportes">Aportes mensais</label>
+                    <input type="number" id="aportes">
+                </div>
+                <div class="imput-field">
+                    <label for="taxa">Taxa de Juros a.m</label>
+                    <input type="number" id="taxa">
+                </div>
+                <div class="imput-field">
+                    <label for="tempo">Peréodo em anos</label>
+                    <input type="number" id="tempo">
+                </div>
+            </div>
+            <div id="resultado">
+                <h4>
+                    Resultado
+                </h4>
+                <span id="totalFinal">
+                    R$ 0,00
+                </span>
+                
+            </div>
+            <button id="calcular">
+                Calcular
+            </button>
+        </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
