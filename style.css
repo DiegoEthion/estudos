@@ -8,79 +8,100 @@
     box-sizing: border-box;
  }
 
- #container{
+ body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calculator {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: #dddddd;
+  font-size: 24px;
   
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    /*box-shadow: 10px 5px 5px black;*/
-    align-items: center;
-    justify-content: center;
-    /* background: linear-gradient(90deg, #5771c786, #85bbe4,#ffffff); */
-    background: linear-gradient(90deg, #01030ac5, #020303,#0f0e0e);
- }
+}
 
- #calculator{
- 
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
-    background-color: aliceblue;
-    padding: 30px;
-    border-radius: 8px;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 30px ;
- }
- #calculator h2{
-    font-size: 30px;
-    position: relative;
- }
- #calculator h2::before{
-    position: absolute;
-    content: '';
-    height: 3px;
-    width: 150px;
-    background-color: black;
- }
- #imputbox{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
- }
- .imput-field{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
- }
- .imput-field label{
-    font-size: 15px;
-    color: rgb(19, 19, 19);
-    font-weight: 500;
+#imputbox {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
 
- }
- .imput-field input{
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgb(19, 19, 19);
-    padding: 5px;
-    font-size: 20px;
- }
- .imput-field input:focus{
-    outline: none;
- }
- #resultado{
-    text-align: center;
- }
- #totalFinal{
-    font-size: 40px;
- }
- #calcular{
-    background: #030a10;
-    color: aliceblue;
-    border: none;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
- }
+.imput-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  color: #dddddd;
+}
+
+input[type="number"] {
+  margin: 0;
+  width: 50%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555555;
+  color: #ffffff;
+}
+
+#resultado {
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: #dddddd;
+  font-size: 18px;
+}
+
+#totalFinal {
+  display: block;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#calcular {
+  width: 100%;
+  background-color: #43b347;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#calcular:hover {
+  background-color: #45a049;
+}
+select {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555555;
+  color: #ffffff;
+}
+
+select option {
+  background-color: #555555;
+  color: #ffffff;
+}
