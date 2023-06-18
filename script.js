@@ -1,5 +1,5 @@
 document.getElementById('calcular').addEventListener('click', function() {
-    const value = parseFloat(document.getElementById('value').value);
+    const inicio = parseFloat(document.getElementById('inicio').value);
     const taxa = parseFloat(document.getElementById('taxa').value) / 100;
     const tempo = parseFloat(document.getElementById('tempo').value);
     const aportes = parseFloat(document.getElementById('aportes').value);
@@ -21,7 +21,7 @@ document.getElementById('calcular').addEventListener('click', function() {
         taxaCalculada = Math.pow(1 + taxa, 1 / 12) - 1;
     }
 
-    let totalFinal = value;
+    let totalFinal = inicio;
     for (let i = 0; i < tempoCalculado; i++) {
         totalFinal *= (1 + taxaCalculada);
         totalFinal += aportes;
